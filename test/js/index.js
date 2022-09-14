@@ -1,4 +1,4 @@
 const p = document.querySelector('p');
-// p.style.color = 'blue'
+p.style.color = 'blue'
 // p.className += ' p-blue';
-document.styleSheets[0].insertRule('.blue { color: gray }', 0);
+// document.styleSheets[0].insertRule('.blue { color: gray }', 0);
