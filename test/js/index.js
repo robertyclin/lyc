@@ -8,14 +8,12 @@ btn.addEventListener('click', () => {
     className[1] = 'content-red';
   }
   btn.className = className.join(' ');
+  window.requestAnimationFrame(step)
 })
-
 
 let i = 0;
 function step () {
   console.log(i)
   i = i + 1;
-  window.requestAnimationFrame(step);
+  //window.requestAnimationFrame(step);
 }
-
-window.requestAnimationFrame(step)
