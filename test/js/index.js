@@ -9,6 +9,8 @@ btn.addEventListener('click', () => {
   }
   btn.className = className.join(' ');
   window.requestAnimationFrame(step)
+
+  window.requestIdleCallback(step1);
 })
 
 let i = 0;
@@ -16,4 +18,8 @@ function step () {
   console.log(i)
   i = i + 1;
   //window.requestAnimationFrame(step);
+}
+
+function step1() {
+  console.log(2)
 }
