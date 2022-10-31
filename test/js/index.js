@@ -25,4 +25,4 @@ function step1() {
   console.log(2)
 }
 
-const worker = new Worker('./worker.js');
+const worker = new Worker('./js/worker.js');
