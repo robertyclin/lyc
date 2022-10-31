@@ -9,3 +9,13 @@ btn.addEventListener('click', () => {
   }
   btn.className = className.join(' ');
 })
+
+
+let i = 0;
+function step () {
+  console.log(i)
+  i = i + 1;
+  window.requestAnimationFrame(step);
+}
+
+window.requestAnimationFrame(step)
