@@ -26,3 +26,7 @@ function step1() {
 }
 
 const worker = new Worker('./js/worker.js');
+
+worker.onmessage = function (event) {
+  console.log('Received message ' + event.data);
+}
