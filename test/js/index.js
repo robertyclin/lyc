@@ -28,5 +28,9 @@ function step1() {
 const worker = new Worker('./js/worker.js');
 
 worker.onmessage = function (event) {
+  let b = 0;
+  for (let i = 0; i < 100000; i++) {
+    b = i;
+  }
   console.log('Received message ' + event.data);
 }
