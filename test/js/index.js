@@ -16,6 +16,7 @@ btn.addEventListener('click', () => {
 let i = 0;
 function step () {
   console.log(i)
+  worker.postMessage('hello');
   i = i + 1;
   //window.requestAnimationFrame(step);
 }
@@ -23,3 +24,5 @@ function step () {
 function step1() {
   console.log(2)
 }
+
+const worker = new Worker('./worker.js');
