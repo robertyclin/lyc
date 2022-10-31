@@ -1,4 +1,11 @@
-const p = document.querySelector('p');
-p.style.color = 'blue'
-// p.className += ' p-blue';
-// document.styleSheets[0].insertRule('.blue { color: gray }', 0);
+const btn = document.querySelector('#btn');
+
+btn.addEventListener('click', () => {
+  const className = btn.className.split(' ');
+  if (className[1] === 'content-red') {
+    className[1] = 'content-blue';
+  } else {
+    className[1] = 'content-red';
+  }
+  btn.className = className.join(' ');
+})

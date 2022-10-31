@@ -77,3 +77,15 @@ p {
 .p-blue {
   color: blue;
 }
+.content {
+  height: 100px;
+  
+}
+
+.content-red {
+  background-color: red;
+}
+
+.content-blue {
+  background-color: blue;
+}
