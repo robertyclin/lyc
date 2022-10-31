@@ -1,6 +1,7 @@
 const btn = document.querySelector('#btn');
 
 btn.addEventListener('click', () => {
+  worker.postMessage('hello');
   const className = btn.className.split(' ');
   if (className[1] === 'content-red') {
     className[1] = 'content-blue';
@@ -16,7 +17,6 @@ btn.addEventListener('click', () => {
 let i = 0;
 function step () {
   console.log(i)
-  worker.postMessage('hello');
   i = i + 1;
   //window.requestAnimationFrame(step);
 }
