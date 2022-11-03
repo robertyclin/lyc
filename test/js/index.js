@@ -18,7 +18,7 @@ let i = 0;
 function step () {
   console.log(i)
   i = i + 1;
-  //window.requestAnimationFrame(step);
+  window.requestAnimationFrame(step);
   const promise = Promise.resolve('im step promise')
   promise.then((value) => {
     console.log(value);
