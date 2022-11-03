@@ -19,8 +19,9 @@ function step () {
   console.log(i)
   i = i + 1;
   //window.requestAnimationFrame(step);
-  new Promise().resolve(() => {
-    console.log('im step promise');
+  const promise = Promise.resolve('im step promise')
+  promise.then((value) => {
+    console.log(value);
   })
 }
 
@@ -35,8 +36,9 @@ worker.onmessage = function (event) {
   for (let i = 0; i < 100000; i++) {
     b = i;
   }
-  new Promise().resolve(() => {
-    console.log('im worker promise');
+  const promise = Promise.resolve('im worker promise')
+  promise.then((value) => {
+    console.log(value);
   })
   console.log('Received message ' + event.data);
 }
