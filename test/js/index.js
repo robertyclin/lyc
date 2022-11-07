@@ -1,6 +1,5 @@
-import {demo} from './index1';
-const btn = document.querySelector('#btn');
 
+const btn = document.querySelector('#btn');
 
 demo();
 btn.addEventListener('click', () => {
