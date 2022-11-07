@@ -1,5 +1,8 @@
+import {demo} from './index1';
 const btn = document.querySelector('#btn');
 
+
+demo();
 btn.addEventListener('click', () => {
   worker.postMessage('hello');
   const className = btn.className.split(' ');
