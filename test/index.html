@@ -32,6 +32,8 @@
         var p = document.createElement('script');
         p.type = 'text/javascript';
         p.src = s;
+        p.async = false;
+        p.defer = true;
         b.appendChild(p)
       })
     })()
