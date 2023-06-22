@@ -7,7 +7,7 @@ import legacy from '@vitejs/plugin-legacy'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: '/lyc/vue-project',
+  base: '/lyc/vue-project/dist',
   // build: {
   //   target: ['es2015']
   // },
